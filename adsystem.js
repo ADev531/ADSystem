@@ -1,8 +1,9 @@
-var body = document.getElementById("body");
+const body = document.getElementById("body");
+const AD = createAD();
 
-function loadAD() {
-  var ad = document.createElement("img");
+function createAD() {
+  const ad = document.createElement("img");
   body.appendChild(ad);
+  
+  return ad
 }
-
-loadAD();
